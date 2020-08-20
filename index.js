@@ -1,9 +1,9 @@
 setInterval(() => {
     d = new Date();
     var utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-    var offset = timezone.value;
-    console.log(offset);
+    var offset = timezone.value;    
     var nd = new Date(utc + (3600000 * offset));
+    
     htime = nd.getHours();
     mtime = nd.getMinutes();
     stime = nd.getSeconds();
